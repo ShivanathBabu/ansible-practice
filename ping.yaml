@@ -1,5 +1,6 @@
-- name: ping server
-  hosts: local
+- name: hellow world
+  hosts: frontend
   tasks:
-    - name: ping server
-    ansible.builtin.ping:
+    - name: print hello world
+      ansible.builtin.debug:
+        msg: "Hello World"
