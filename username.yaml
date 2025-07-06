@@ -13,4 +13,4 @@
   - name: ping your information
     ansible.builtin.debug:
       msg: "hello username is {{username}} and password is {{password}}"
-
+    delegate_to: localhost
