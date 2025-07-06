@@ -1,6 +1,7 @@
 - name: username
-  hosts: frontend
-  connection: frontend
+  hosts: local
+  
+ 
   vars_prompt:
   - name: username
     prompt: please enter username
