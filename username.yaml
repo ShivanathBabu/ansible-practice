@@ -1,13 +1,13 @@
 - name: username
   hosts: local
-
+  connection: local
   vars_prompt:
   - name: username
     prompt: please enter username
-    private: no
+    private: true
   - name: password
     prompt: please enter password
-    private: no
+    private: true
 
   tasks:
   - name: ping your information
