@@ -1,0 +1,8 @@
+- name: play level variables
+  hosts: frontend
+  vars:
+    course: DevSecops
+  tasks:
+    - name: devops with AWS
+      ansible.builtin.debug:
+        msg: "hello I am learning {{course}}, trainer is {{trainer}}, duration is {{duration}}"
