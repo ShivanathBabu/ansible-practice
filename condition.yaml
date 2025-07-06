@@ -1,0 +1,16 @@
+- name: print data
+  hosts: local
+  connection: localhost
+  vars:
+    number: 78
+  tasks:
+    - name: print data
+      ansible.builtin.debug:
+        msg: num is less than 100
+      when: number > 100
+
+    - name: print 100
+      ansible.builtin.debug:
+        msg: num is greater than 100
+      when: number < 100
+        
