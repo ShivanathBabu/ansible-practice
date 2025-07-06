@@ -1,7 +1,7 @@
 - name: username
   hosts: frontend
-  connection: local
-  vars:
+  connection: frontend
+  vars_prompt:
   - name: username
     prompt: please enter username
     private: true
@@ -12,5 +12,5 @@
   tasks:
   - name: ping your information
     ansible.builtin.debug:
-      msg: "hello username is {{username}} ans password is {{password}}"
+      msg: "hello username is {{username}} and password is {{password}}"
 
