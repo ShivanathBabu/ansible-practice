@@ -1,6 +1,6 @@
 - name: print data
   hosts: local
-  connection: localhost
+  
   vars:
     number: 78
   tasks:
