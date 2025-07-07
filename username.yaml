@@ -2,15 +2,15 @@
   hosts: local
   connection: local
   vars_prompt:
-  - name: username
-    prompt: please enter username
-    private: true
-  - name: password
-    prompt: please enter password
-    private: true
+    - name: username
+      prompt: please enter username
+      private: true
+    - name: password
+      prompt: please enter password
+      private: true
 
   tasks:
   - name: ping your information
     ansible.builtin.debug:
       msg: "hello username is {{username}} and password is {{password}}"
-    delegate_to: localhost
+
